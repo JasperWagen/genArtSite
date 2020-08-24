@@ -1,0 +1,19 @@
+@(postForm : Form[Post], post : Post)
+
+@import helper._
+
+@main("Edit Post"){
+<h2 class="title">Edit Post</h2>
+<div class="postForm">
+    @helper.form(action = routes.blogController.update(post.id)){
+    @helper.inputText(postForm("title"))
+    @helper.textarea(postForm("content"))
+    @helper.inputText(postForm("author"))
+
+    <input id="postButton" type="submit" value="Confirm">
+
+    }
+</div>
+
+
+}

@@ -1,0 +1,16 @@
+@(post: Post)
+
+@main(post.title){
+<h2 class="title">@post.title</h2>
+<p>@post.content</p>
+<br>
+<img src="@routes.Assets.versioned("images/postImages/" + post.imageName)">
+<p>Written by @post.author</p>
+<br>
+<div>
+    <a class="postControls" href = "@routes.blogController.edit(post.id)" >Edit</a>
+    <a class="postControls" href = "@routes.blogController.destroy(post.id)">Delete</a>
+    <!-- TODO: Delete conformation button -->
+</div>
+<a class="back" href = "@routes.blogController.genart()">Back to Posts</a>
+}

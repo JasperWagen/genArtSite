@@ -1,0 +1,93 @@
+.title {
+    font-family: Cambria;
+    font-weight: 100;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 200px;
+    color: rgb(65, 65, 65);
+}
+
+.page {
+    margin: auto;
+
+    padding-top: 100px;
+
+    font-family: "Inter","Roboto",-apple-system,system-ui,BlinkMacSystemFont,
+    "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",Helvetica,Arial,
+    sans-serif;
+    font-weight: 300;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.topnav a {
+  float: right;
+  color: rgb(65, 65, 65);
+  text-align: center;
+  padding: 70px 20px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+a:hover {
+  color: rgb(200, 75, 0);
+}
+
+input {
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+    height: 150px;
+    padding:10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+}
+
+dd {
+    margin: 10px 0px 20px 0px;
+}
+
+#postButton {
+    width: 20%;
+}
+
+.postControls{
+    padding: 0px 20px;
+    color: rgb(100, 100, 100);
+    text-align: right;
+    float: right;
+    display: inline-block;
+}
+
+.back{
+    display: inline-block;
+    color: rgb(100, 100, 100);
+}
+
+#newPost{
+    text-align: right;
+    float: right;
+    margin: 25px 20px;
+    display: inline-block;
+}
+
+#allPosts{
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+

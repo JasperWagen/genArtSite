@@ -1,0 +1,13 @@
+@(posts : Set[Post])
+
+@main("Posts") {
+    <h2 class="title" id="allPosts">All Posts</h2>
+    <a id="newPost" href="@routes.blogController.create()">New Post</a>
+    <br>
+    @for(post <- posts){
+        <a href="@routes.blogController.show(post.id)">@post.title</a>
+        <br>
+        <br>
+    }
+}
+
