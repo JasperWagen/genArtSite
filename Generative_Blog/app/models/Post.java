@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.HashSet;
 
 public class Post {
-
+    // TODO: change id creation to a UUID implementation
     public Integer id = allPosts().size();
     public String title;
     public String content;
